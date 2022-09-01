@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Lato:wght@300&family=Open+Sans:wght@300&family=Overpass&family=Poppins:ital,wght@0,400;1,200&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+
+:root{
+    --orange-color: hsl(25, 97%, 53%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey-color: hsl(217, 12%, 63%);
+    --medium-grey-color: hsl(216, 11%, 27%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Overpass;
+}
+
+.first-container{
+    background-color: var(--dark-blue);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+
+.first-container.active{
+    display: block;
+}
+
+
+#star-icon{
+    background-color: var(--medium-grey-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#star-icon img{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+p{
+    color: var(--light-grey-color);
+    font-size:  15px;
+}
+
+h2{
+    color: var(--white-color);
+}
+
+#numbers{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.numberBtn{
+    background-color: var(--medium-grey-color);
+    border: none;
+    color: var(--white-color);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+.numberBtn:hover{
+    background-color: var(--light-grey-color)
+}
+
+.numberBtn.clicked{
+    background-color: var(--orange-color);
+}
+
+.submit{
+    background-color: var(--orange-color);
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    color: #fff; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.second-container{
+    display: none;
+    background-color: var(--dark-blue);
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.second-container.active{
+    display: block;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    text-align: center;
+}
+
+.text-area{
+    background-color: var(--medium-grey-color);
+    color: var(--orange-color);
+    border-radius: 20px;
+    font-size:  15px;
+    margin-top: 10px;
+    padding: 4px 15px;
+}
+
+#thank-you-icon{
+    padding-top: 10px;
+}
+
+.content h2{
+    margin-bottom: 0px;
+}
