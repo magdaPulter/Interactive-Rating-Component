@@ -92,7 +92,10 @@ h2{
     letter-spacing: 2px;
     cursor: pointer;
 }
-
+.submit:hover{
+    background-color: #fff;
+    color: var(--orange-color);
+}
 
 .second-container{
     display: none;
